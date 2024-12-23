@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Formulaire d'inscription utilisateur</title>
+        <link rel="stylesheet" href="for.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Formulaire d'Inscription Utilisateur</h2>
+            <form id="registrationForm"><!--début d'un formulaire html identifié par id="registrationForm"-->
+                <div class="row"> <!--une ligne de contenu dans le formulaire utilisée pour structure les éléments-->
+                    <label for="firstName">Prénom:</label>  <!-- crée une étiquette pour le champ de texte associé à l'élément ayant id="fistName"--> 
+                    <input type="text" id="firstName" name="firstName" requiered/> <!--champ de saisie pour le prénom id="firstName" identifiant unique pour le champ/required :champ obligatoire-->           
+                </div>
+                <div class="row"> <!--nouvelle ligne pour structurer un autre champ de saisie-->
+                    <label for="lastName">Nom :</label>
+                    <input type="text" id ="lastName" name="lastName" required />
+                </div>
+                <div class="row">
+                    <label for="email">Email:</label>   
+                    <input type="email" id="email" name="email" requiered/>           
+                </div>
+                <div class="row">
+                    <label for="password">Mot de passe:</label>   
+                    <input type="password" id="password" name="password" requiered/>           
+                </div>
+                <div class="row">
+                    <label for="confirmPassword">Confirmer Mot de Passe :</label>   
+                    <input type="password" id="confirmPassword" name="confirmPassword" requiered/>           
+                </div>
+                <div class="row">
+                    <fieldset>
+                        <legend>Genre :</legend>
+                        <input type="radio" id="male" name="gender" value="male"/>
+                        Masculin
+                        <input type="radio" id="female" name="gender" value="female"/>
+                        Féminin
+                    </fieldset>        
+                </div>
+                <div class="row">
+                    <label for="country">Pays:</label>   
+                    <select id="country" name="country" required >
+                        <option value="">Sélectionnez un pays</option>
+                        <option value="tunisie">Tunisie</option>
+                        <option value="france">France</option>
+                        <option value="algérie">Algérie</option>
+                        <option value="united-states">United-States</option>
+                    </select>           
+                </div>
+                <button type="submit">S'inscrire</button>
+
+            </form>
+            <!--Zone pour afficher le message de succés-->
+            <div id="succesMessage"></div>
+            <!--zone pour afficher les messages d'erreur-->
+            <div id="errorMessage" class="error"></div>
+        </div>
+        <script src="for.js"async></script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(227, 239, 194);
+    margin: 0px ;
+    padding : 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.container{
+    background-color: #b8df9d;
+    border: 1px solid ;
+    border-radius: 10px ;
+    padding: 20px 30px;
+    width: 400px;
+    box-shadow: 0 4px 4px 4px rgba(0,0,0,0.6)
+}
+.container h2{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+/*style pour les options de genre*/
+input[type="radio"]{
+    margin-right: 5px;
+}
+/*centrer les bouttons radi*/
+div.radio-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top : 10px;
+}
+/*style pour la liste déroulante*/
+select{
+    background-color: #dce5ef;
+    cursor: pointer;
+}
+button{
+    visibility: visible;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color:#dce5ef;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: #94bca5;
+}
